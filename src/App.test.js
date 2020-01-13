@@ -1,6 +1,10 @@
+// import the basics 
 import React from 'react';
-import { render } from '@testing-library/react';
-import App from './App';
+import {BrowserRouter as Router, Route} from "react-router-dom";
+import "bootstrap/dist/css/bootstrap.min.css"
+
+
+
 
 test('renders learn react link', () => {
   const { getByText } = render(<App />);
