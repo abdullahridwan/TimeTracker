@@ -6,8 +6,27 @@ import "react-datepicker/dist/react-datepicker.css";
 
 //(2) Export 
 export default class CreateEntry extends Component{
-    // now every entry will have the time start, time end, and the description 
-    this.state={
-        time
+/*---------------------------------------------------------
+                    Make Constructor 
+---------------------------------------------------------*/
+    //(1) create a construct and app the super portion. 
+    constructor(props){
+        super(props)
+
+        //Do we have methods? If so, then bind this 
+
+        //Create the nesc variables
+        this.state={
+            timeStart: 0,
+            timeEnd: 0,
+            duration: 0,
+            description:'',
+            date: new Date()
+        }
     }
+/*---------------------------------------------------------
+                    Make Methods 
+---------------------------------------------------------*/
+    
+
 }
